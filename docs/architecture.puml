@@ -1,0 +1,10 @@
+@startuml
+skinparam backgroundColor transparent
+left to right direction
+
+:User: as u
+
+!include vpn.puml
+u <--> n : INTERNET
+
+@enduml

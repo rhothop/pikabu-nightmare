@@ -1,0 +1,10 @@
+@startuml
+skinparam backgroundColor transparent
+
+rectangle "Back" as b {
+    component "Back 0" as b0
+    component "Back N" as bN
+}
+
+b0 . bN
+@enduml

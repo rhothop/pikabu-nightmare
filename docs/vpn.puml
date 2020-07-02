@@ -1,0 +1,14 @@
+@startuml
+skinparam backgroundColor transparent
+
+rectangle "VPN" as vpn {
+    !include front.puml
+    !include back.puml
+    !include db.puml
+    !include store.puml
+}
+
+f <--> b : 172.x
+f <--> db : 172.x
+f <--> s : 172.x
+@enduml
