@@ -1,0 +1,10 @@
+@startuml
+skinparam backgroundColor transparent
+
+rectangle "Store" as s {
+    component "Minio 0" as m0
+    component "Minio N" as mN
+}
+
+m0 . mN
+@enduml
